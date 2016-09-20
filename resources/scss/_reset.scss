@@ -1,0 +1,28 @@
+/** 定义全局变量 **/
+$font-zh: "Microsoft YaHei";
+$font-en: "Helvetica Light", "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+$BaselineHeight: 1.5;
+$fontSize12: 12px;
+
+/** start default **/
+body {
+    color: #333;
+    // line-height: $BaselineHeight;
+    // font-family: $font-zh;
+    // font-size: $fontSize12;
+    font: #{$fontSize12}/#{$BaselineHeight} $font-zh;
+}
+
+body,
+form,
+h1,
+h2,
+h3,
+h4,
+img,
+li,
+table,
+ul {
+    margin: 0;
+    padding: 0;
+}

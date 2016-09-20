@@ -1,0 +1,56 @@
+/** Golable variable **/
+$pcMenuWidth: 1218px;
+$pcMenuHight: 76px;
+$font-zh: "Microsoft YaHei";
+/**  **/
+
+.yuex-topLine{
+    height: 4px;
+    background: url(../images/head/yuex-bgtopLine.jpg) repeat-x;
+    overflow: hidden;
+}
+.yuex-topLine-in{
+    height: 4px;
+    width: $pcMenuWidth;
+    background: url(../images/head/yuex-bgtopLine.jpg) repeat-x;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.yuex-header-warp{
+    background: url(../images/head/yuex-header-wrap_bg.gif) repeat-x;
+}
+
+.yuex-header{
+    width: $pcMenuWidth;
+    height: $pcMenuHight;
+    margin: 0 auto;
+}
+.yuex-mainMenu{
+    width: 955px;
+    float: right;
+    position: relative;
+    top: 25px;
+    table {
+        width: 100%;
+        td {
+            text-align: center;
+            a {
+                color: #5e4b46;
+                font:bold 15px/18px $font-zh ;
+
+                &:hover{
+                    color: #eb5e13;
+                }
+            }
+        }
+    }
+
+}
+.glyphicon-yuexSeperate{
+    width: 16px;
+    height: 50px;
+}
+.yuex-bottomLine{
+    height: 3px;
+    background: url(../images/head/yuex-bgbottomLine.jpg) repeat-x;
+}
