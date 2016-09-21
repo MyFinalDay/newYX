@@ -1,6 +1,80 @@
 @charset "UTF-8";
-
+/** 瀹氫箟鍏ㄥ眬鍙橀噺 **/
 /** start default **/
+body {
+  color: #333;
+  font: 12px/1.5 "Microsoft YaHei"; }
 
+body,
+form,
+h1,
+h2,
+h3,
+h4,
+img,
+li,
+table,
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+/* define gloable variable*/
+/** start default **/
+.hr20 {
+  height: 20px; }
+
+/* pc-ready */
+.pc-ready {
+  background: #f2f2f2 url("../images/pc-ready-bg.jpg") no-repeat top center;
+  border-top: 1px solid #d2d2d2; }
+
+.pic-pane {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block; }
+
+.news-title,
+.research,
+.scan-title {
+  font: 22px/40px "Microsoft YaHei";
+  color: #eb5e13;
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: lighter; }
+  .news-title .more,
+  .research .more,
+  .scan-title .more {
+    font: 14px/20px Arial;
+    color: #414141;
+    padding-right: 17px;
+    background: url(../images/de_more.gif) no-repeat center right;
+    position: absolute;
+    top: 10px;
+    right: -19px; }
+
+.group-scan {
+  padding-right: 15px; }
+
+.group-scan-box-content {
+  background: #fff url("../images/group-scan-box-logo_bg.jpg") no-repeat;
+  padding: 20px 10px 20px 30px;
+  font: 16px/30px "Microsoft YaHei";
+  color: #666666; }
+  .group-scan-box-content .pull-left {
+    margin-right: 32px; }
+
+.media-body {
+  text-indent: 2em; }
+
+.scan-body2 {
+  padding-right: 6px; }
+
+.group-scan-ad {
+  background: url("../images/scan-box-ad_bg.jpg") no-repeat; }
+
+.group-news {
+  padding-left: 16px; }
 
 /*# sourceMappingURL=main.css.map */

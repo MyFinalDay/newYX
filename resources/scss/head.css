@@ -2,23 +2,24 @@
 /**  **/
 .yuex-topLine {
   height: 4px;
-  background: url(../images/head/yuex-bgtopLine.jpg) repeat-x;
+  background: url("../images/head/yuex-bgtopLine.jpg") repeat-x;
   overflow: hidden; }
 
 .yuex-topLine-in {
   height: 4px;
   width: 1218px;
-  background: url(../images/head/yuex-bgtopLine.jpg) repeat-x;
+  background: url("../images/head/yuex-bgtopLine.jpg") repeat-x;
   margin: 0 auto;
   overflow: hidden; }
 
 .yuex-header-warp {
-  background: url(../images/head/yuex-header-wrap_bg.gif) repeat-x; }
+  background: url("../images/head/yuex-header-wrap_bg.gif") repeat-x; }
 
 .yuex-header {
   width: 1218px;
   height: 76px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .yuex-mainMenu {
   width: 955px;
@@ -35,12 +36,73 @@
         .yuex-mainMenu table td a:hover {
           color: #eb5e13; }
 
-.glyphicon-yuexSeperate {
+.mainMenu-divideLine {
   width: 16px;
   height: 50px; }
 
 .yuex-bottomLine {
   height: 3px;
-  background: url(../images/head/yuex-bgbottomLine.jpg) repeat-x; }
+  background: url("../images/head/yuex-bgbottomLine.jpg") repeat-x;
+  overflow: hidden; }
+
+.yuex-bottomLine-in {
+  height: 3px;
+  width: 1218px;
+  background: url("../images/head/yuex-bgbottomLine.jpg") repeat-x;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.subMenu-wrap {
+  position: absolute;
+  background: url("../images/head/yuex-subMenu-bg.jpg") repeat;
+  height: 22px;
+  top: 0;
+  right: 0; }
+
+.subMenu li {
+  text-align: center;
+  float: left;
+  background: url("../images/head/yuex-subMenu_divideLine.gif") no-repeat 0 8px;
+  padding: 2px 9px 0 9px; }
+  .subMenu li a {
+    font: 12px/22px;
+    color: #a6a6a6; }
+
+.subMenu-conrerL, .subMenu-conrerR {
+  width: 17px;
+  height: 22px;
+  position: absolute;
+  top: 0; }
+
+.subMenu-conrerL {
+  background: url("../images/head/yuex-subMenu-conrerL.jpg") no-repeat;
+  left: -16px; }
+
+.subMenu-conrerR {
+  background: url("../images/head/yuex-subMenu-conrerR.jpg") no-repeat;
+  right: -16px; }
+
+/* yuex-breadcrumb */
+.yuex-breadcrumb-wrap {
+  height: 33px;
+  background: url("../images/head/yuex-breadcrumb_bg.gif") repeat-x; }
+
+.yuex-breadcrumb {
+  width: 1218px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.bread {
+  width: 600px;
+  font: 12px/33px  "\5B8B\4F53";
+  float: left; }
+  .bread a {
+    color: #707070; }
+
+.showToday {
+  line-height: 33px;
+  float: right; }
+
+/* yuex-subNav */
 
 /*# sourceMappingURL=head.css.map */
