@@ -1,5 +1,6 @@
 @import "_reset.scss";
 /* define gloable variable*/
+$pcMenuWidth: 1218px;
 /** start default **/
 .hr20 {
     height: 20px;
@@ -10,6 +11,11 @@
     border-top: 1px solid #d2d2d2;
 }
 
+.main-content-in {
+    width: $pcMenuWidth;
+    margin: 0 auto;
+}
+
 .pic-pane {
     max-width: 100%;
     margin: 0 auto;
@@ -17,24 +23,29 @@
 }
 
 .news-title,
-.research,
-.scan-title {
+.quick_channel-title,
+.research-title,
+.scan-title,
+.issue_suggest-title,
+.security-title {
     font: 22px/40px $font-zh;
     color: #eb5e13;
     border-bottom: 1px solid #d9d9d9;
     font-weight: lighter;
-    .more{
+    margin-bottom: 10px;
+    .more {
         font: 14px/20px Arial;
         color: #414141;
         padding-right: 17px;
-        background: url(../images/de_more.gif) no-repeat center right;
+        background: url("../images/de_more.gif") no-repeat center right;
         position: absolute;
         top: 10px;
-        right: -19px;
+        right: 2px;
     }
 }
 
-.group-scan {
+.group-scan,
+.quick_channel {
     padding-right: 15px;
 }
 
@@ -45,7 +56,7 @@
     color: #666666;
 
     .pull-left {
-        margin-right: 32px;
+        margin-right: 22px;
     }
 }
 
@@ -55,14 +66,76 @@
 
 .scan-body2 {
     padding-right: 6px;
+    padding-top: 25px;
 }
 
 .group-scan-ad {
     background: url("../images/scan-box-ad_bg.jpg") no-repeat;
-}
-.group-news{
-    padding-left: 16px;
-}
-.group-news-box{
+    padding: 26px 97px 25px;
 
+    .pull-left {
+        margin-right: 10px;
+    }
+}
+
+.yuex-pan2,.issue_suggest {
+    padding-left: 15px;
+}
+
+.group-news {}
+
+.group-news-box {}
+
+.carousel-tabl1 {
+    height: 19px;
+}
+
+.research {
+    position: relative;
+}
+
+.research-box {
+    ul {
+        padding-left: 20px;
+
+        li {
+            list-style: disc;
+            color: #eb5e13;
+
+            span {
+                font: 12px/35px Arial;
+                color: #929292;
+                float: right;
+            }
+        }
+
+        a {
+            font: 16px/35px $font-zh;
+            color: #2f2f2f;
+        }
+    }
+}
+/* quick_channel */
+.loans {
+    a {
+        cursor: pointer;
+        img{
+            margin: 5px 0;
+        }
+    }
+
+    .row {
+        margin-top: 8px;
+
+        .loansL,.loansR {
+            width: 48%;
+            float: left;
+        }
+    }
+}
+.loansL{
+    margin-right: 4%;
+}
+.security{
+    position: relative;
 }

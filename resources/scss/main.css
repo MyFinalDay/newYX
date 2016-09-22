@@ -21,6 +21,12 @@ ul {
 ul li {
   list-style: none; }
 
+.col-md-6 {
+  padding: 0; }
+
+.row {
+  margin: 0; }
+
 /* define gloable variable*/
 /** start default **/
 .hr20 {
@@ -31,30 +37,42 @@ ul li {
   background: #f2f2f2 url("../images/pc-ready-bg.jpg") no-repeat top center;
   border-top: 1px solid #d2d2d2; }
 
+.main-content-in {
+  width: 1218px;
+  margin: 0 auto; }
+
 .pic-pane {
   max-width: 100%;
   margin: 0 auto;
   display: block; }
 
 .news-title,
-.research,
-.scan-title {
+.quick_channel-title,
+.research-title,
+.scan-title,
+.issue_suggest-title,
+.security-title {
   font: 22px/40px "Microsoft YaHei";
   color: #eb5e13;
   border-bottom: 1px solid #d9d9d9;
-  font-weight: lighter; }
+  font-weight: lighter;
+  margin-bottom: 10px; }
   .news-title .more,
-  .research .more,
-  .scan-title .more {
+  .quick_channel-title .more,
+  .research-title .more,
+  .scan-title .more,
+  .issue_suggest-title .more,
+  .security-title .more {
     font: 14px/20px Arial;
     color: #414141;
     padding-right: 17px;
-    background: url(../images/de_more.gif) no-repeat center right;
+    background: url("../images/de_more.gif") no-repeat center right;
     position: absolute;
     top: 10px;
-    right: -19px; }
+    right: 2px; }
 
-.group-scan {
+.group-scan,
+.quick_channel {
   padding-right: 15px; }
 
 .group-scan-box-content {
@@ -63,18 +81,58 @@ ul li {
   font: 16px/30px "Microsoft YaHei";
   color: #666666; }
   .group-scan-box-content .pull-left {
-    margin-right: 32px; }
+    margin-right: 22px; }
 
 .media-body {
   text-indent: 2em; }
 
 .scan-body2 {
-  padding-right: 6px; }
+  padding-right: 6px;
+  padding-top: 25px; }
 
 .group-scan-ad {
-  background: url("../images/scan-box-ad_bg.jpg") no-repeat; }
+  background: url("../images/scan-box-ad_bg.jpg") no-repeat;
+  padding: 26px 97px 25px; }
+  .group-scan-ad .pull-left {
+    margin-right: 10px; }
 
-.group-news {
-  padding-left: 16px; }
+.yuex-pan2, .issue_suggest {
+  padding-left: 15px; }
+
+.carousel-tabl1 {
+  height: 19px; }
+
+.research {
+  position: relative; }
+
+.research-box ul {
+  padding-left: 20px; }
+  .research-box ul li {
+    list-style: disc;
+    color: #eb5e13; }
+    .research-box ul li span {
+      font: 12px/35px Arial;
+      color: #929292;
+      float: right; }
+  .research-box ul a {
+    font: 16px/35px "Microsoft YaHei";
+    color: #2f2f2f; }
+
+/* quick_channel */
+.loans a {
+  cursor: pointer; }
+  .loans a img {
+    margin: 5px 0; }
+.loans .row {
+  margin-top: 8px; }
+  .loans .row .loansL, .loans .row .loansR {
+    width: 48%;
+    float: left; }
+
+.loansL {
+  margin-right: 4%; }
+
+.security {
+  position: relative; }
 
 /*# sourceMappingURL=main.css.map */
