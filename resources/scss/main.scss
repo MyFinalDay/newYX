@@ -11,28 +11,30 @@ $pcMenuWidth: 1218px;
     border-top: 1px solid #d2d2d2;
 }
 
-.main-content-in {
-    width: $pcMenuWidth;
-    margin: 0 auto;
-}
-
 .pic-pane {
     max-width: 100%;
     margin: 0 auto;
     display: block;
 }
 
+.main-content-in,
+.yuex-row2 {
+    width: $pcMenuWidth;
+    margin: 0 auto;
+}
+
+.issue_suggest-title,
 .news-title,
 .quick_channel-title,
 .research-title,
 .scan-title,
-.issue_suggest-title,
 .security-title {
     font: 22px/40px $font-zh;
     color: #eb5e13;
     border-bottom: 1px solid #d9d9d9;
     font-weight: lighter;
     margin-bottom: 10px;
+
     .more {
         font: 14px/20px Arial;
         color: #414141;
@@ -43,11 +45,10 @@ $pcMenuWidth: 1218px;
         right: 2px;
     }
 }
-
-.group-scan,
-.quick_channel {
-    padding-right: 15px;
-}
+// .group-scan,
+// .quick_channel {
+//     padding-right: 15px;
+// }
 
 .group-scan-box-content {
     background: #fff url("../images/group-scan-box-logo_bg.jpg") no-repeat;
@@ -77,10 +78,10 @@ $pcMenuWidth: 1218px;
         margin-right: 10px;
     }
 }
-
-.yuex-pan2,.issue_suggest {
-    padding-left: 15px;
-}
+// .issue_suggest,
+// .yuex-pan2 {
+//     padding-left: 15px;
+// }
 
 .group-news {}
 
@@ -119,23 +120,76 @@ $pcMenuWidth: 1218px;
 .loans {
     a {
         cursor: pointer;
-        img{
-            margin: 5px 0;
-        }
     }
 
     .row {
         margin-top: 8px;
 
-        .loansL,.loansR {
+        .loansL,
+        .loansR {
             width: 48%;
             float: left;
         }
     }
 }
-.loansL{
+
+.loansL {
     margin-right: 4%;
 }
-.security{
+
+.security {
     position: relative;
+}
+/* issue_suggest*/
+.group-news-box,
+.issue_suggest-box {
+    img {
+        width: 100%;
+    }
+}
+/* twelvebox */
+.yuex-row3 {
+    
+    .col-md-6{
+        padding: 0;
+    }
+}
+.yuex-twelvebox {
+    .item {
+        width: 48%;
+        float: left;
+        background: #fff;
+
+        h3 {
+            a {
+                font: 20px/40px $font-zh;
+                color: #996600;
+                margin: 0 15px;
+                display: block;
+                height: 40px;
+            }
+        }
+    }
+
+    .item:first-child {
+        margin-right: 4%;
+    }
+}
+
+.twelvebox-info {
+    font: 12px/20px $font-zh;
+    height: 40px;
+    margin: 0 15px 15px;
+    color: #594e48;
+    overflow: hidden;
+
+}
+/*
+* mobile & ipad vetical */
+@media screen and (max-width:$screen-md-min) {
+    .main-content-in,
+    .yuex-row2 {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

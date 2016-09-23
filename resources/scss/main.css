@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /** 瀹氫箟鍏ㄥ眬鍙橀噺 **/
+/* screen size*/
 /** start default **/
 body {
   color: #333;
@@ -21,9 +22,6 @@ ul {
 ul li {
   list-style: none; }
 
-.col-md-6 {
-  padding: 0; }
-
 .row {
   margin: 0; }
 
@@ -37,31 +35,32 @@ ul li {
   background: #f2f2f2 url("../images/pc-ready-bg.jpg") no-repeat top center;
   border-top: 1px solid #d2d2d2; }
 
-.main-content-in {
-  width: 1218px;
-  margin: 0 auto; }
-
 .pic-pane {
   max-width: 100%;
   margin: 0 auto;
   display: block; }
 
+.main-content-in,
+.yuex-row2 {
+  width: 1218px;
+  margin: 0 auto; }
+
+.issue_suggest-title,
 .news-title,
 .quick_channel-title,
 .research-title,
 .scan-title,
-.issue_suggest-title,
 .security-title {
   font: 22px/40px "Microsoft YaHei";
   color: #eb5e13;
   border-bottom: 1px solid #d9d9d9;
   font-weight: lighter;
   margin-bottom: 10px; }
+  .issue_suggest-title .more,
   .news-title .more,
   .quick_channel-title .more,
   .research-title .more,
   .scan-title .more,
-  .issue_suggest-title .more,
   .security-title .more {
     font: 14px/20px Arial;
     color: #414141;
@@ -70,10 +69,6 @@ ul li {
     position: absolute;
     top: 10px;
     right: 2px; }
-
-.group-scan,
-.quick_channel {
-  padding-right: 15px; }
 
 .group-scan-box-content {
   background: #fff url("../images/group-scan-box-logo_bg.jpg") no-repeat;
@@ -95,9 +90,6 @@ ul li {
   padding: 26px 97px 25px; }
   .group-scan-ad .pull-left {
     margin-right: 10px; }
-
-.yuex-pan2, .issue_suggest {
-  padding-left: 15px; }
 
 .carousel-tabl1 {
   height: 19px; }
@@ -121,11 +113,10 @@ ul li {
 /* quick_channel */
 .loans a {
   cursor: pointer; }
-  .loans a img {
-    margin: 5px 0; }
 .loans .row {
   margin-top: 8px; }
-  .loans .row .loansL, .loans .row .loansR {
+  .loans .row .loansL,
+  .loans .row .loansR {
     width: 48%;
     float: left; }
 
@@ -134,5 +125,42 @@ ul li {
 
 .security {
   position: relative; }
+
+/* issue_suggest*/
+.group-news-box img,
+.issue_suggest-box img {
+  width: 100%; }
+
+/* twelvebox */
+.yuex-row3 .col-md-6 {
+  padding: 0; }
+
+.yuex-twelvebox .item {
+  width: 48%;
+  float: left;
+  background: #fff; }
+  .yuex-twelvebox .item h3 a {
+    font: 20px/40px "Microsoft YaHei";
+    color: #996600;
+    margin: 0 15px;
+    display: block;
+    height: 40px; }
+.yuex-twelvebox .item:first-child {
+  margin-right: 4%; }
+
+.twelvebox-info {
+  font: 12px/20px "Microsoft YaHei";
+  height: 40px;
+  margin: 0 15px 15px;
+  color: #594e48;
+  overflow: hidden; }
+
+/*
+* mobile & ipad vetical */
+@media screen and (max-width: 992px) {
+  .main-content-in,
+  .yuex-row2 {
+    width: 100%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */

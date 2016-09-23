@@ -4,6 +4,8 @@ $font-en: "Helvetica Light", "Myriad Set Pro", "Lucida Grande", "Helvetica Neue"
 $BaselineHeight: 1.5;
 $fontSize12: 12px;
 
+/* screen size*/
+$screen-md-min: 992px;
 /** start default **/
 body {
     color: #333;
@@ -29,9 +31,9 @@ ul {
 ul li{
     list-style: none;
 }
-.col-md-6 {
-    padding: 0;
-}
+// .col-md-6 {
+//     padding: 0;
+// }
 
 .row {
     margin: 0;
