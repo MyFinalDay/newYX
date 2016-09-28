@@ -23,12 +23,33 @@ $pcMenuWidth: 1218px;
     margin: 0 auto;
 }
 
+.main-content-in {
+    // .yuex-1,.yuex-pan3{
+    //     padding-left: 0;
+    // }
+    // .yuex-pan2,.yuex-pan4{
+    //     padding-right: 0;
+    //     padding-left: 0;
+    // }
+    // .yuex-pan5{
+    //     padding: 0;
+    // }
+    .yuex-1,
+    .yuex-pan2,
+    .yuex-pan3,
+    .yuex-pan4,
+    .yuex-pan5 {
+        padding: 0;
+    }
+}
+
 .issue_suggest-title,
 .news-title,
 .quick_channel-title,
 .research-title,
 .scan-title,
-.security-title {
+.security-title,
+.yuex-more-title {
     font: 22px/40px $font-zh;
     color: #eb5e13;
     border-bottom: 1px solid #d9d9d9;
@@ -45,10 +66,13 @@ $pcMenuWidth: 1218px;
         right: 2px;
     }
 }
-// .group-scan,
-// .quick_channel {
-//     padding-right: 15px;
-// }
+
+.group-scan,
+.quick_channel,
+.yuex-more {
+    // padding-left: 15px;
+    padding-right: 15px;
+}
 
 .group-scan-box-content {
     background: #fff url("../images/group-scan-box-logo_bg.jpg") no-repeat;
@@ -78,20 +102,62 @@ $pcMenuWidth: 1218px;
         margin-right: 10px;
     }
 }
-// .issue_suggest,
-// .yuex-pan2 {
-//     padding-left: 15px;
-// }
 
-.group-news {}
+.group-news,
+.issue_suggest,
+.research,
+.yuex-pan2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@keyframes carousel-img {
+    0% {
+        background: url("../images/temp2_03.jpg");
+    }
 
-.group-news-box {}
+    50% {
+        background: url("../images/temp1_03.jpg");
+    }
+
+    100% {
+        background: url("../images/temp2_03.jpg");
+    }
+}
+@-webkit-keyframes carousel-img {
+    0% {
+        background: url("../images/temp2_03.jpg");
+    }
+
+    50% {
+        background: url("../images/temp1_03.jpg");
+    }
+
+    100% {
+        background: url("../images/temp2_03.jpg");
+    }
+}
+
+.group-news-box {
+    animation: carousel-img 12s ease infinite;
+    -webkit-animation: carousel-img 12s ease infinite;
+
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+
+    img {
+        opacity: 0;
+    }
+}
 
 .carousel-tabl1 {
     height: 19px;
 }
 
-.research {
+.news-title,
+.research-title,
+.security-title,
+.yuex-more-title {
     position: relative;
 }
 
@@ -136,10 +202,6 @@ $pcMenuWidth: 1218px;
 .loansL {
     margin-right: 4%;
 }
-
-.security {
-    position: relative;
-}
 /* issue_suggest*/
 .group-news-box,
 .issue_suggest-box {
@@ -149,16 +211,17 @@ $pcMenuWidth: 1218px;
 }
 /* twelvebox */
 .yuex-row3 {
-    
-    .col-md-6{
+    .col-md-6 {
         padding: 0;
     }
 }
+
 .yuex-twelvebox {
     .item {
         width: 48%;
         float: left;
         background: #fff;
+        margin-top: 10px;
 
         h3 {
             a {
@@ -175,6 +238,30 @@ $pcMenuWidth: 1218px;
         margin-right: 4%;
     }
 }
+// .yuex-twelvebox-left {
+//     padding-right: 15px;
+// }
+//
+// .yuex-twelvebox-right {
+//     padding-left: 15px;
+// }
+//
+
+.yuex-more-right {
+    padding-left: 15px;
+}
+
+.security,
+.yuex-twelvebox {
+    // padding-left: 15px;
+    padding-right: 15px;
+}
+
+.itemPic {
+    img {
+        width: 100%;
+    }
+}
 
 .twelvebox-info {
     font: 12px/20px $font-zh;
@@ -182,14 +269,72 @@ $pcMenuWidth: 1218px;
     margin: 0 15px 15px;
     color: #594e48;
     overflow: hidden;
+}
+/* repeat section */
+/* footer */
+.footer {
+    border-top: 1px solid #d9d9d9;
+}
 
+.footer-contents {
+    width: $pcMenuWidth;
+    margin: 0 auto;
+    height: 83px;
+
+    .footer-contents-left {
+        padding-top: 10px;
+
+        a {
+            font: 12px/20px Simsun;
+            color: #515151;
+        }
+    }
+
+    .footer-contents-right {
+        padding-top: 10px;
+        text-align: right;
+
+        a {
+            font: 12px/20px Arial;
+            color: #7d7d7d;
+        }
+    }
 }
 /*
-* mobile & ipad vetical */
+* mobile & ipad vetical <= 968px */
 @media screen and (max-width:$screen-md-min) {
     .main-content-in,
     .yuex-row2 {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .research-title,
+    .security-title {
+        margin-bottom: 0;
+    }
+
+    .footer-contents {
+        width: 100%;
+
+        .footer-contents-left,
+        .footer-contents-right {
+            text-align: center;
+        }
+    }
+
+    .quick_channel,
+    .security,
+    .yuex-row3 {
+        padding-left: 15px;
+    }
+}
+/* mobile <= 767px */
+@media screen and (max-width:$screen-xs-max) {
+    .yuex-twelvebox {
+        .item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 }

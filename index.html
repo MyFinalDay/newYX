@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-cn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 让国产浏览器采用高速模式渲染页面 -->
+    <meta name="renderer" content="webkit">
 
     <title>ResponsePractiseDocument</title>
     <link rel="stylesheet" href="resources/css/bootstrap.min.css" type="text/css">
@@ -59,6 +61,7 @@
                         </tr>
                     </table>
                 </div>
+
                 <!-- yuex-mainMenu end! -->
                 <div class="subMenu-wrap ">
                     <span class="subMenu-conrerL"></span>
@@ -88,12 +91,17 @@
     </div>
     <!-- end pc-menu! -->
 
+    <div class="navbar navbar-default hidden-lg">
+
+    </div>
+    <!-- end navbar hidden-lg! -->
+
     <div class="pc-ready">
         <img src="resources/images/pic-pane.jpg" alt="" class="pic-pane">
         <div class="hr20 hidden-sm hidden-xs"></div>
         <div class="main-content-in">
             <div class="row">
-                <div class="col-md-6 hidden-sm hidden-xs">
+                <div class="col-md-6 hidden-sm hidden-xs yuex-1">
                     <div class="group-scan">
                         <h3 class="scan-title">集团速览</h3>
                         <div class="group-scan-box">
@@ -154,30 +162,50 @@
                 <!-- group-scan & yuex-pan2 end! -->
                 <div class="hr20 hidden-sm hidden-xs"></div>
                 <div class="row yuex-row2">
-                    <div class="col-md-6 hidden-xs">
+                    <div class="col-md-6 hidden-xs yuex-pan3">
                         <div class="quick_channel">
                             <h3 class="quick_channel-title">快速通道</h3>
                             <div class="loans">
                                 <div class="row">
                                     <div class="loansL">
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
                                     </div>
                                     <div class="loansR">
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
-                                        <div class="media"><a href="#"><img src="resources/images/loans_long.jpg" alt=""></a></div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
+                                        <div class="media">
+                                            <a href="#"><img src="resources/images/loans_long.jpg" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 yuex-pan4">
                         <div class="issue_suggest">
                             <h3 class="issue_suggest-title">焦点推荐</h3>
                             <div class="issue_suggest-box"><img src="resources/images/issue_suggest.jpg" alt=""></div>
@@ -187,25 +215,19 @@
                 <!-- yuex-row2 end! -->
                 <div class="hr20 hidden-sm hidden-xs"></div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 yuex-pan5">
                         <div class="security">
                             <h3 class="security-title">证券业务<a href="#" class="more">More</a></h3>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row yuex-row3">
                     <div class="col-md-6">
-                        <div class="yuex-twelvebox">
+                        <div class="yuex-twelvebox yuex-twelvebox-left">
                             <div class="item">
                                 <h3><a href="#">Small loans</a></h3>
                                 <p class="twelvebox-info">
-                                    we server for loans,
-                                    just join us!
-                                    people hand in hand,
-                                    make world perfert!
-                                    more infomation more local help,
-                                    and we will be better!
-                                    phone us or email this number:
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
                                 </p>
                                 <div class="itemPic">
                                     <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
@@ -214,13 +236,7 @@
                             <div class="item">
                                 <h3><a href="#">Small loans</a></h3>
                                 <p class="twelvebox-info">
-                                    we server for loans,
-                                    just join us!
-                                    people hand in hand,
-                                    make world perfert!
-                                    more infomation more local help,
-                                    and we will be better!
-                                    phone us or email this number:
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
                                 </p>
                                 <div class="itemPic">
                                     <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
@@ -228,13 +244,172 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="row yuex-twelvebox yuex-twelvebox-right yuex-more-right">
+                            <div class="item">
+                                <h3><a href="#">Small loans</a></h3>
+                                <p class="twelvebox-info">
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                </p>
+                                <div class="itemPic">
+                                    <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3><a href="#">Small loans</a></h3>
+                                <p class="twelvebox-info">
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                </p>
+                                <div class="itemPic">
+                                    <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="hr20 hidden-sm hidden-xs"></div>
+
+
+
+                <!-- repeat section! -->
+                <div class="row yuex-row3">
+                    <div class="col-md-6">
+                        <div class="yuex-more">
+                            <h3 class="yuex-more-title">
+                                融资租赁业务
+                                <a href="#" class="more">More</a>
+                            </h3>
+                        </div>
+                        <div class="yuex-twelvebox yuex-twelvebox-left">
+                            <div class="item">
+                                <h3><a href="#">Small loans</a></h3>
+                                <p class="twelvebox-info">
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                </p>
+                                <div class="itemPic">
+                                    <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3><a href="#">Small loans</a></h3>
+                                <p class="twelvebox-info">
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                </p>
+                                <div class="itemPic">
+                                    <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="yuex-more yuex-more-right">
+                            <h3 class="yuex-more-title">
+                                产业资金业务
+                                <a href="#" class="more">More</a>
+                            </h3>
+                            <div class="row yuex-twelvebox yuex-twelvebox-right">
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hr20 hidden-sm hidden-xs"></div>
+                <div class="row yuex-row3">
+                    <div class="col-md-6">
+                        <div class="yuex-more">
+                            <h3 class="yuex-more-title">
+                                担保业务
+                                <a href="#" class="more">More</a>
+                            </h3>
+                        </div>
+                        <div class="yuex-twelvebox yuex-twelvebox-left">
+                            <div class="item">
+                                <h3><a href="#">Small loans</a></h3>
+                                <p class="twelvebox-info">
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                </p>
+                                <div class="itemPic">
+                                    <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3><a href="#">Small loans</a></h3>
+                                <p class="twelvebox-info">
+                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                </p>
+                                <div class="itemPic">
+                                    <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="yuex-more yuex-more-right">
+                            <h3 class="yuex-more-title">
+                                小贷业务
+                                <a href="#" class="more">More</a>
+                            </h3>
+                            <div class="row yuex-twelvebox yuex-twelvebox-right">
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hr20 hidden-sm hidden-xs"></div>
             </div>
         </div>
     </div>
+
+
     <!-- end pc-ready! -->
-    <div class="footer "></div>
+    <div class="footer ">
+        <div class="footer-contents row">
+            <div class="col-md-6 footer-contents-left">
+                <a href="#">加入我们</a> |
+                <a href="#">公司简介</a> |
+                <a href="#">联系我们</a>
+            </div>
+            <div class="col-md-6 footer-contents-right">
+                <span>Copyright @ 2014 YUEXIU FINANCIAL HOLDINGS GROUP CO.LTD.粤ICP备14082159号</span>
+            </div>
+        </div>
+    </div>
     <!-- end footer! -->
     <script src="resources/js/jquery-3.0.0.min.js "></script>
     <script src="resources/js/bootstrap.min.js "></script>

@@ -25,6 +25,9 @@ ul li {
 .row {
   margin: 0; }
 
+img {
+  border: 0; }
+
 /* define gloable variable*/
 /** start default **/
 .hr20 {
@@ -45,12 +48,20 @@ ul li {
   width: 1218px;
   margin: 0 auto; }
 
+.main-content-in .yuex-1,
+.main-content-in .yuex-pan2,
+.main-content-in .yuex-pan3,
+.main-content-in .yuex-pan4,
+.main-content-in .yuex-pan5 {
+  padding: 0; }
+
 .issue_suggest-title,
 .news-title,
 .quick_channel-title,
 .research-title,
 .scan-title,
-.security-title {
+.security-title,
+.yuex-more-title {
   font: 22px/40px "Microsoft YaHei";
   color: #eb5e13;
   border-bottom: 1px solid #d9d9d9;
@@ -61,7 +72,8 @@ ul li {
   .quick_channel-title .more,
   .research-title .more,
   .scan-title .more,
-  .security-title .more {
+  .security-title .more,
+  .yuex-more-title .more {
     font: 14px/20px Arial;
     color: #414141;
     padding-right: 17px;
@@ -69,6 +81,11 @@ ul li {
     position: absolute;
     top: 10px;
     right: 2px; }
+
+.group-scan,
+.quick_channel,
+.yuex-more {
+  padding-right: 15px; }
 
 .group-scan-box-content {
   background: #fff url("../images/group-scan-box-logo_bg.jpg") no-repeat;
@@ -91,10 +108,40 @@ ul li {
   .group-scan-ad .pull-left {
     margin-right: 10px; }
 
+.group-news,
+.issue_suggest,
+.research,
+.yuex-pan2 {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@keyframes carousel-img {
+  0% {
+    background: url("../images/temp2_03.jpg"); }
+  50% {
+    background: url("../images/temp1_03.jpg"); }
+  100% {
+    background: url("../images/temp2_03.jpg"); } }
+@-webkit-keyframes carousel-img {
+  0% {
+    background: url("../images/temp2_03.jpg"); }
+  50% {
+    background: url("../images/temp1_03.jpg"); }
+  100% {
+    background: url("../images/temp2_03.jpg"); } }
+.group-news-box {
+  animation: carousel-img 12s ease infinite;
+  -webkit-animation: carousel-img 12s ease infinite; }
+  .group-news-box img {
+    opacity: 0; }
+
 .carousel-tabl1 {
   height: 19px; }
 
-.research {
+.news-title,
+.research-title,
+.security-title,
+.yuex-more-title {
   position: relative; }
 
 .research-box ul {
@@ -123,9 +170,6 @@ ul li {
 .loansL {
   margin-right: 4%; }
 
-.security {
-  position: relative; }
-
 /* issue_suggest*/
 .group-news-box img,
 .issue_suggest-box img {
@@ -138,7 +182,8 @@ ul li {
 .yuex-twelvebox .item {
   width: 48%;
   float: left;
-  background: #fff; }
+  background: #fff;
+  margin-top: 10px; }
   .yuex-twelvebox .item h3 a {
     font: 20px/40px "Microsoft YaHei";
     color: #996600;
@@ -148,6 +193,16 @@ ul li {
 .yuex-twelvebox .item:first-child {
   margin-right: 4%; }
 
+.yuex-more-right {
+  padding-left: 15px; }
+
+.security,
+.yuex-twelvebox {
+  padding-right: 15px; }
+
+.itemPic img {
+  width: 100%; }
+
 .twelvebox-info {
   font: 12px/20px "Microsoft YaHei";
   height: 40px;
@@ -155,12 +210,53 @@ ul li {
   color: #594e48;
   overflow: hidden; }
 
+/* repeat section */
+/* footer */
+.footer {
+  border-top: 1px solid #d9d9d9; }
+
+.footer-contents {
+  width: 1218px;
+  margin: 0 auto;
+  height: 83px; }
+  .footer-contents .footer-contents-left {
+    padding-top: 10px; }
+    .footer-contents .footer-contents-left a {
+      font: 12px/20px Simsun;
+      color: #515151; }
+  .footer-contents .footer-contents-right {
+    padding-top: 10px;
+    text-align: right; }
+    .footer-contents .footer-contents-right a {
+      font: 12px/20px Arial;
+      color: #7d7d7d; }
+
 /*
-* mobile & ipad vetical */
+* mobile & ipad vetical <= 968px */
 @media screen and (max-width: 992px) {
   .main-content-in,
   .yuex-row2 {
     width: 100%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .research-title,
+  .security-title {
+    margin-bottom: 0; }
+
+  .footer-contents {
+    width: 100%; }
+    .footer-contents .footer-contents-left,
+    .footer-contents .footer-contents-right {
+      text-align: center; }
+
+  .quick_channel,
+  .security,
+  .yuex-row3 {
+    padding-left: 15px; } }
+/* mobile <= 767px */
+@media screen and (max-width: 767px) {
+  .yuex-twelvebox .item {
+    width: 100%;
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
