@@ -1,3 +1,33 @@
+@charset "UTF-8";
+/** 瀹氫箟鍏ㄥ眬鍙橀噺 **/
+/* screen size*/
+/** start default **/
+body {
+  color: #333;
+  font: 12px/1.5 "Microsoft YaHei"; }
+
+body,
+form,
+h1,
+h2,
+h3,
+h4,
+img,
+li,
+table,
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+.row {
+  margin: 0; }
+
+img {
+  border: 0; }
+
 /** Golable variable **/
 /**  **/
 .yuex-topLine {
@@ -63,12 +93,13 @@
   text-align: center;
   float: left;
   background: url("../images/head/yuex-subMenu_divideLine.gif") no-repeat 0 8px;
-  padding: 2px 9px 0 9px; }
+  padding: 2px 9px 0; }
   .subMenu li a {
     font: 12px/22px;
     color: #a6a6a6; }
 
-.subMenu-conrerL, .subMenu-conrerR {
+.subMenu-conrerL,
+.subMenu-conrerR {
   width: 17px;
   height: 22px;
   position: absolute;
@@ -94,7 +125,7 @@
 
 .bread {
   width: 600px;
-  font: 12px/33px  "\5B8B\4F53";
+  font: 12px/33px "\5B8B\4F53";
   float: left; }
   .bread a {
     color: #707070; }
@@ -104,5 +135,27 @@
   float: right; }
 
 /* yuex-subNav */
+/* navbar >= 768px*/
+.navbar {
+  background: none; }
+  .navbar .yuex-search span {
+    padding: 0; }
+    .navbar .yuex-search span button {
+      width: 40px;
+      background: none;
+      border: 0; }
+
+@media screen and (min-width: 768px) {
+  .navbar .container {
+    height: 100px; }
+    .navbar .container .navbar-right {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      .navbar .container .navbar-right .yuex-search {
+        position: absolute;
+        width: 200px;
+        top: -40px;
+        right: 0; } }
 
 /*# sourceMappingURL=head.css.map */
