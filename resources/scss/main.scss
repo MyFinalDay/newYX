@@ -238,9 +238,9 @@ $pcMenuWidth: 1218px;
         margin-right: 4%;
     }
 }
-// .yuex-twelvebox-left {
-//     padding-right: 15px;
-// }
+.yuex-twelvebox-left {
+    padding-right: 15px;
+}
 //
 // .yuex-twelvebox-right {
 //     padding-left: 15px;
@@ -253,8 +253,9 @@ $pcMenuWidth: 1218px;
 
 .security,
 .yuex-twelvebox {
+    overflow: hidden;
     // padding-left: 15px;
-    padding-right: 15px;
+    // padding-right: 15px;
 }
 
 .itemPic {
@@ -323,10 +324,8 @@ $pcMenuWidth: 1218px;
         }
     }
 
-    .quick_channel,
-    .security,
-    .yuex-row3 {
-        padding-left: 15px;
+    .yuex-more,.security{
+        padding: 0 15px;
     }
 }
 /* mobile <= 767px */

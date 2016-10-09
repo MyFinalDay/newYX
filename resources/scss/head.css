@@ -137,25 +137,92 @@ img {
 /* yuex-subNav */
 /* navbar >= 768px*/
 .navbar {
-  background: none; }
-  .navbar .yuex-search span {
-    padding: 0; }
-    .navbar .yuex-search span button {
-      width: 40px;
-      background: none;
-      border: 0; }
+  background: none;
+  margin: 0;
+  border: 0;
+  /* show when mobile <768px */ }
+  .navbar .navbar-header {
+    min-height: 50px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    /* mobile menu button */
+    /* mobile menu button when collapse*/ }
+    .navbar .navbar-header .navbar-toggle {
+      position: absolute;
+      left: 5px;
+      top: 10px;
+      background: url("../images/head/menu-hover.png") no-repeat;
+      background-size: 31px 24px;
+      border: none;
+      width: 31px;
+      height: 24px; }
+      .navbar .navbar-header .navbar-toggle span {
+        display: none; }
+    .navbar .navbar-header .collapsed {
+      background: url("../images/head/menu.png") no-repeat;
+      background-size: 31px 24px; }
+    .navbar .navbar-header .navbar-brand {
+      float: none; }
+      .navbar .navbar-header .navbar-brand img {
+        width: 120px;
+        display: inline; }
+  .navbar .yuex-search {
+    padding: 5px; }
+    .navbar .yuex-search span {
+      padding: 0; }
+      .navbar .yuex-search span button {
+        width: 40px;
+        background: none;
+        border: 0; }
+  .navbar .navbar-right li {
+    padding-left: 10px; }
+    .navbar .navbar-right li a {
+      position: relative; }
+    .navbar .navbar-right li span.glyphicon-chevron-down {
+      position: absolute;
+      right: 30px;
+      top: 14px; }
+      .navbar .navbar-right li span.glyphicon-chevron-down:before {
+        color: #adadad;
+        font-size: 11px; }
+    .navbar .navbar-right li.open span:before {
+      content: "\e113";
+      color: #f08601; }
+    .navbar .navbar-right li.open a:focus {
+      background: #f8f8f8;
+      color: #f08601 !important; }
+  .navbar .li-menu-bg a {
+    font-size: 16px; }
 
+.footer-contents {
+  margin: 0 auto; }
+
+/* <= 767px*/
 @media screen and (min-width: 768px) {
   .navbar .container {
-    height: 100px; }
+    height: 100px;
+    position: relative; }
     .navbar .container .navbar-right {
       position: absolute;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      margin-right: 0; }
       .navbar .container .navbar-right .yuex-search {
         position: absolute;
         width: 200px;
-        top: -40px;
-        right: 0; } }
+        top: -35px;
+        right: 0; }
+      .navbar .container .navbar-right .li-menu-bg {
+        padding-left: 15px; }
+        .navbar .container .navbar-right .li-menu-bg a {
+          position: relative;
+          color: #5e4b46;
+          padding: 10px 2px; }
+          .navbar .container .navbar-right .li-menu-bg a:before {
+            content: "/";
+            color: #eaeaea;
+            position: absolute;
+            left: -10px; } }
 
 /*# sourceMappingURL=head.css.map */

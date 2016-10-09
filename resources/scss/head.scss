@@ -139,8 +139,49 @@ $font-zh: "Microsoft YaHei";
 /* navbar >= 768px*/
 .navbar {
     background: none;
+    margin: 0;
+    border: 0;
+    /* show when mobile <768px */
+    .navbar-header {
+        min-height: 50px;
+        position: relative;
+        text-align: center;
+        margin: 0;
+        /* mobile menu button */
+        .navbar-toggle {
+            position: absolute;
+            left: 5px;
+            top: 10px;
+            background: url("../images/head/menu-hover.png") no-repeat;
+            background-size: 31px 24px;
+            border: none;
+            width: 31px;
+            height: 24px;
+
+            span {
+                display: none;
+            }
+        }
+        /* mobile menu button when collapse*/
+        .collapsed {
+            background: url("../images/head/menu.png") no-repeat;
+            background-size: 31px 24px;
+        }
+
+        .navbar-brand {
+            float: none;
+
+            img {
+                width: 120px;
+                display: inline;
+                //reset bootstrap style
+            }
+        }
+    }
 
     .yuex-search {
+        padding: 5px;
+
         span {
             padding: 0;
 
@@ -152,22 +193,83 @@ $font-zh: "Microsoft YaHei";
             }
         }
     }
+
+    .navbar-right {
+           li {
+               padding-left: 10px;
+               a {
+                   position: relative;
+               }
+               span.glyphicon-chevron-down {
+                   position: absolute;
+                   right: 30px;
+                   top: 14px;
+                   &:before {
+                       color: #adadad;
+                       font-size: 11px;
+                   }
+               }
+               // color change & toggle
+               &.open {
+                   span:before {
+                       // cotent show glyphicon-chevron-up
+                       content: "\e113";
+                       color: #f08601;
+                   }
+                   a:focus {
+                       background: #f8f8f8;
+                       color: #f08601 !important;
+                   }
+               }
+           }
+       }
+
+    .li-menu-bg {
+        a {
+            font-size: 16px;
+        }
+    }
 }
+//.footer-contents margin set-again-to-avoid-cover
+
+.footer-contents {
+    margin: 0 auto;
+}
+/* <= 767px*/
 @media screen and (min-width: $screen-sm-min) {
     .navbar {
         .container {
             height: 100px;
+            position: relative;
 
             .navbar-right {
                 position: absolute;
                 bottom: 0;
                 right: 0;
+                margin-right: 0;
 
                 .yuex-search {
                     position: absolute;
                     width: 200px;
-                    top: -40px;
+                    top: -35px;
                     right: 0;
+                }
+
+                .li-menu-bg {
+                    padding-left: 15px;
+
+                    a {
+                        position: relative;
+                        color: #5e4b46;
+                        padding: 10px 2px;
+
+                        &:before {
+                            content: "/";
+                            color: #eaeaea;
+                            position: absolute;
+                            left: -10px;
+                        }
+                    }
                 }
             }
         }

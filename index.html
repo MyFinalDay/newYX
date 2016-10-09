@@ -11,7 +11,7 @@
     <title>ResponsePractiseDocument</title>
     <link rel="stylesheet" href="resources/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet " href="resources/scss/main.css " type="text/css " />
-    <link rel="stylesheet " href="resources/scss/head.css " />
+    <link rel="stylesheet " href="resources/scss/head.css " type="text/css" />
 </head>
 
 <body>
@@ -94,22 +94,79 @@
     <div class="navbar navbar-default hidden-lg">
         <div class="container">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand"><img src="resources/images/head/yuex-logo_sm.png" alt="" /></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">t</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+                <a href="#" class="navbar-brand">
+                    <img src="resources/images/head/yuex-logo_sm.png" alt="" />
+                </a>
             </div>
-            <div class="navbar-collaspe">
+            <div class="navbar-collapse collapse">
                 <div class="navbar-right">
                     <form action="">
                         <div class="input-group yuex-search">
                             <input type="text" class="form-control" placeholder="请输入文章标题..">
-                            <span class="input-group-addon"><button class="glyphicon glyphicon-search" type="sumbit"></button></span>
+                            <span class="input-group-addon">
+                                <button class="glyphicon glyphicon-search" type="sumbit"></button>
+                            </span>
 
                         </div>
                     </form>
-                    <ul class="navbar">
-                        <li class="li-menu-bg"></li>
-                        <li class="li-menu-bg"></li>
-                        <li class="li-menu-bg"></li>
-                        <li class="li-menu-bg"></li>
+                    <ul class="nav navbar-nav">
+                        <li class="li-menu-bg"><a href="#">首页</a></li>
+                        <li class="li-menu-bg" >
+                            <a href="#" data-toggle="dropdown">关于我们
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">公司简介<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">战略目标<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">业务领域<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">组织架构<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">企业品牌<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">企业理念<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">大事记<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">关于越秀<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="li-menu-bg"><a href="#">核心业务</a></li>
+                        <li class="li-menu-bg">
+                            <a href="#" data-toggle="dropdown">新闻中心
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">集体要闻<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">媒体报道<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">行业动态<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">最新产品<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="li-menu-bg">
+                            <a href="#" data-toggle="dropdown">企业视点
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">越秀金融研究所<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">风险管理<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">战略视角<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="li-menu-bg">
+                            <a href="#" data-toggle="dropdown">加入我们
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">人才理念<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">全职机会<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">实习机会<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                                <li><a href="">应聘资料下载<span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -184,7 +241,7 @@
                 <div class="hr20 hidden-sm hidden-xs"></div>
                 <div class="row yuex-row2">
                     <div class="col-md-6 hidden-xs yuex-pan3">
-                        <div class="quick_channel">
+                        <div class="quick_channel yuex-more">
                             <h3 class="quick_channel-title">快速通道</h3>
                             <div class="loans">
                                 <div class="row">
@@ -244,7 +301,7 @@
                 </div>
                 <div class="row yuex-row3 yuex-left">
                     <div class="col-md-6">
-                        <div class="yuex-twelvebox yuex-twelvebox-left">
+                        <div class="yuex-twelvebox yuex-twelvebox-left yuex-more">
                             <div class="item">
                                 <h3><a href="#">Small loans</a></h3>
                                 <p class="twelvebox-info">
@@ -266,7 +323,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="row yuex-twelvebox yuex-more-right">
+                        <div class="row yuex-twelvebox yuex-more-right yuex-more">
                             <div class="item">
                                 <h3><a href="#">Small loans</a></h3>
                                 <p class="twelvebox-info">
@@ -295,32 +352,33 @@
                 <!-- repeat section! -->
                 <div class="row yuex-row3">
                     <div class="col-md-6 yuex-left">
-                        <div class="yuex-more">
+                        <div class="yuex-more  yuex-twelvebox-left">
                             <h3 class="yuex-more-title">
                                 融资租赁业务
                                 <a href="#" class="more">More</a>
                             </h3>
-                        </div>
-                        <div class="yuex-twelvebox yuex-twelvebox-left">
-                            <div class="item">
-                                <h3><a href="#">Small loans</a></h3>
-                                <p class="twelvebox-info">
-                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
-                                </p>
-                                <div class="itemPic">
-                                    <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                            <div class="yuex-twelvebox">
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <h3><a href="#">Small loans</a></h3>
-                                <p class="twelvebox-info">
-                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
-                                </p>
-                                <div class="itemPic">
-                                    <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
-                                </div>
-                            </div>
                         </div>
+
                     </div>
                     <div class="col-md-6">
                         <div class="yuex-more yuex-more-right">
@@ -355,32 +413,33 @@
                 <div class="hr20 hidden-sm hidden-xs"></div>
                 <div class="row yuex-row3">
                     <div class="col-md-6 yuex-left">
-                        <div class="yuex-more">
+                        <div class="yuex-more  yuex-twelvebox-left">
                             <h3 class="yuex-more-title">
                                 担保业务
                                 <a href="#" class="more">More</a>
                             </h3>
-                        </div>
-                        <div class="yuex-twelvebox yuex-twelvebox-left">
-                            <div class="item">
-                                <h3><a href="#">Small loans</a></h3>
-                                <p class="twelvebox-info">
-                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
-                                </p>
-                                <div class="itemPic">
-                                    <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                            <div class="yuex-twelvebox">
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" width="282" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3><a href="#">Small loans</a></h3>
+                                    <p class="twelvebox-info">
+                                        we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
+                                    </p>
+                                    <div class="itemPic">
+                                        <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <h3><a href="#">Small loans</a></h3>
-                                <p class="twelvebox-info">
-                                    we server for loans, just join us! people hand in hand, make world perfert! more infomation more local help, and we will be better! phone us or email this number:
-                                </p>
-                                <div class="itemPic">
-                                    <a href="#"><img src="resources/images/itemPic.jpg" alt=""></a>
-                                </div>
-                            </div>
                         </div>
+
                     </div>
                     <div class="col-md-6 ">
                         <div class="yuex-more yuex-more-right">
@@ -420,7 +479,7 @@
 
     <!-- end pc-ready! -->
     <div class="footer ">
-        <div class="footer-contents row">
+        <div class="row footer-contents ">
             <div class="col-md-6 footer-contents-left">
                 <a href="#">加入我们</a> |
                 <a href="#">公司简介</a> |

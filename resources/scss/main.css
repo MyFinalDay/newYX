@@ -193,12 +193,15 @@ img {
 .yuex-twelvebox .item:first-child {
   margin-right: 4%; }
 
+.yuex-twelvebox-left {
+  padding-right: 15px; }
+
 .yuex-more-right {
   padding-left: 15px; }
 
 .security,
 .yuex-twelvebox {
-  padding-right: 15px; }
+  overflow: hidden; }
 
 .itemPic img {
   width: 100%; }
@@ -249,10 +252,8 @@ img {
     .footer-contents .footer-contents-right {
       text-align: center; }
 
-  .quick_channel,
-  .security,
-  .yuex-row3 {
-    padding-left: 15px; } }
+  .yuex-more, .security {
+    padding: 0 15px; } }
 /* mobile <= 767px */
 @media screen and (max-width: 767px) {
   .yuex-twelvebox .item {
