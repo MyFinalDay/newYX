@@ -141,6 +141,8 @@ img {
   margin: 0;
   border: 0;
   /* show when mobile <768px */ }
+  .navbar ul li {
+    border-bottom: 1px solid #f9f7f7; }
   .navbar .navbar-header {
     min-height: 50px;
     position: relative;
@@ -192,8 +194,19 @@ img {
     .navbar .navbar-right li.open a:focus {
       background: #f8f8f8;
       color: #f08601 !important; }
+  .navbar .li-menu-bg .dropdown-menu li {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .navbar .li-menu-bg .dropdown-menu li a {
+      font-size: 14px;
+      padding-top: 0;
+      padding-bottom: 0; }
   .navbar .li-menu-bg a {
-    font-size: 16px; }
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "Simsun";
+    font-size: 16px;
+    color: #777; }
 
 .footer-contents {
   margin: 0 auto; }

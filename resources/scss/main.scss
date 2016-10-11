@@ -100,6 +100,9 @@ $pcMenuWidth: 1218px;
 
     .pull-left {
         margin-right: 10px;
+        img{
+            width: 100%;
+        }
     }
 }
 
@@ -140,11 +143,8 @@ $pcMenuWidth: 1218px;
 .group-news-box {
     animation: carousel-img 12s ease infinite;
     -webkit-animation: carousel-img 12s ease infinite;
-
     // background-size: cover;
     // background-repeat: no-repeat;
-
-
     img {
         opacity: 0;
     }
@@ -238,6 +238,7 @@ $pcMenuWidth: 1218px;
         margin-right: 4%;
     }
 }
+
 .yuex-twelvebox-left {
     padding-right: 15px;
 }
@@ -301,8 +302,36 @@ $pcMenuWidth: 1218px;
         }
     }
 }
+/* 992px -- 1200px */
+@media (max-width: $screen-lg-min) and (min-width: $screen-md-min) {
+    .footer-contents,
+    .main-content-in,
+    .yuex-row2 {
+        width: 1000px;
+    }
+
+    .group-scan-box-content{
+        padding-bottom: 10px;
+    }
+    .scan-body2{
+        padding-top: 5px;
+    }
+    .group-scan-ad {
+        height: 50px;
+    }
+
+    .loans {
+        .media {
+            a {
+                img {
+                    height: 44px;
+                }
+            }
+        }
+    }
+}
 /*
-* mobile & ipad vetical <= 968px */
+* mobile & ipad vetical <= 992px */
 @media screen and (max-width:$screen-md-min) {
     .main-content-in,
     .yuex-row2 {
@@ -324,7 +353,8 @@ $pcMenuWidth: 1218px;
         }
     }
 
-    .yuex-more,.security{
+    .security,
+    .yuex-more {
         padding: 0 15px;
     }
 }

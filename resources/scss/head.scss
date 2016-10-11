@@ -142,6 +142,11 @@ $font-zh: "Microsoft YaHei";
     margin: 0;
     border: 0;
     /* show when mobile <768px */
+    ul{
+        li{
+            border-bottom: 1px solid #f9f7f7;
+        }
+    }
     .navbar-header {
         min-height: 50px;
         position: relative;
@@ -225,8 +230,25 @@ $font-zh: "Microsoft YaHei";
        }
 
     .li-menu-bg {
+
+        .dropdown-menu{
+            li{
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                a{
+                    font-size: 14px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
         a {
+                font-size: 12px;
+            line-height: 20px;
+            font-family: "Simsun";
             font-size: 16px;
+            color: #777;
         }
     }
 }

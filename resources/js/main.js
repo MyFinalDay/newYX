@@ -1,5 +1,5 @@
 $(function(){
-    var cur_time=new Date();
+    //var cur_time=new Date();
 
     var showCurrentTime = function(){
         $('.showToday').html(function(){
@@ -12,4 +12,8 @@ $(function(){
 
     console.log(typeof showCurrentTime);
     setInterval(showCurrentTime,1000);
+
+    $("#carousel-suggest").carousel({
+        interval:2000
+    })
 })
