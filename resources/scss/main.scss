@@ -100,7 +100,8 @@ $pcMenuWidth: 1218px;
 
     .pull-left {
         margin-right: 10px;
-        img{
+
+        img {
             width: 100%;
         }
     }
@@ -301,21 +302,38 @@ $pcMenuWidth: 1218px;
             color: #7d7d7d;
         }
     }
+
 }
+.group-news,
+.issue_suggest,
+.research,
+.yuex-more-right {
+    padding-right: 0;
+}
+
 /* 992px -- 1200px */
 @media (max-width: $screen-lg-min) and (min-width: $screen-md-min) {
+    .group-news,
+    .issue_suggest,
+    .research,
+    .yuex-more-right {
+        padding-right: 0;
+    }
+
     .footer-contents,
     .main-content-in,
     .yuex-row2 {
         width: 1000px;
     }
 
-    .group-scan-box-content{
+    .group-scan-box-content {
         padding-bottom: 10px;
     }
-    .scan-body2{
+
+    .scan-body2 {
         padding-top: 5px;
     }
+
     .group-scan-ad {
         height: 50px;
     }
@@ -365,5 +383,8 @@ $pcMenuWidth: 1218px;
             width: 100%;
             margin-bottom: 20px;
         }
+    }
+    .group-news,.issue_suggest{
+        padding-right: 15px;
     }
 }

@@ -167,7 +167,6 @@ img {
     .navbar .navbar-header .navbar-brand {
       float: none; }
       .navbar .navbar-header .navbar-brand img {
-        width: 120px;
         display: inline; }
   .navbar .yuex-search {
     padding: 5px; }
@@ -211,7 +210,11 @@ img {
 .footer-contents {
   margin: 0 auto; }
 
-/* <= 767px*/
+/* <= 768px */
+@media screen and (max-width: 768px) {
+  .navbar-brand img {
+    width: 120px; } }
+/* >= 767px*/
 @media screen and (min-width: 768px) {
   .navbar .container {
     height: 100px;
@@ -229,6 +232,7 @@ img {
       .navbar .container .navbar-right .li-menu-bg {
         padding-left: 15px; }
         .navbar .container .navbar-right .li-menu-bg a {
+          font-size: 12px;
           position: relative;
           color: #5e4b46;
           padding: 10px 2px; }

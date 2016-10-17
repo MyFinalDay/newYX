@@ -236,8 +236,20 @@ img {
       font: 12px/20px Arial;
       color: #7d7d7d; }
 
+.group-news,
+.issue_suggest,
+.research,
+.yuex-more-right {
+  padding-right: 0; }
+
 /* 992px -- 1200px */
 @media (max-width: 1200px) and (min-width: 992px) {
+  .group-news,
+  .issue_suggest,
+  .research,
+  .yuex-more-right {
+    padding-right: 0; }
+
   .footer-contents,
   .main-content-in,
   .yuex-row2 {
@@ -279,6 +291,9 @@ img {
 @media screen and (max-width: 767px) {
   .yuex-twelvebox .item {
     width: 100%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .group-news, .issue_suggest {
+    padding-right: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
